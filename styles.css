@@ -1,0 +1,106 @@
+:root {
+  --def-transition-duration: 0.2s;
+}
+
+html {
+  font-size: 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.5;
+}
+
+body {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+/* img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+} */
+
+#hero-img {
+  width: 95%;
+  margin: 0 auto;
+  height: 300px;
+  margin-bottom: 1rem;
+  background-color: lightslategray;
+  border-radius: 3px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+}
+
+svg {
+  width: 4cm;
+  height: 4rem;
+}
+
+p,
+h4 {
+  width: 95%;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 3rem;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #a1a2a3;
+  display: inline-block;
+}
+
+nav ul a:hover {
+  color: #e8e8e8;
+}
+
+.has-submenu {
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.has-submenu:hover > a {
+  color: #e8e8e8;
+}
+
+.has-submenu ul {
+  position: absolute;
+  top: 100%;
+  left: -2rem;
+  background-color: #212224;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: none;
+}
+
+.has-submenu:hover ul {
+  display: block;
+}
+
+.has-submenu ul a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  min-width: 15rem;
+  border-radius: 0.5rem;
+}
+
+.has-submenu ul a:hover {
+  background-color: #2c2d2f;
+  padding: 1rem 1.5rem;
+}
