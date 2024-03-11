@@ -7,54 +7,34 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <div id="logo"><h1>Jonathan Spivack</h1></div>
-      <nav>
-        <ul>
-          <li class="has-submenu">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.8 7.88">
-              <rect
-                x="0.04"
-                y="6.3"
-                width="8.75"
-                height="1.57"
-                rx="0.59"
-                fill="#e8e8e8"
-              />
-              <rect
-                y="3.15"
-                width="8.75"
-                height="1.57"
-                rx="0.59"
-                fill="#e8e8e8"
-              />
-              <rect width="8.75" height="1.57" rx="0.59" fill="#e8e8e8" />
-            </svg>
-            <ul>
-              <li><a href="#home">Solo Guitar</a></li>
-              <li><a href="#media">Media</a></li>
-              <li><a href="#album">Original Music</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#inquire">Inquire</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <iframe
-        src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fjonathan.spivack%2Fvideos%2F3216873795042945%2F&show_text=false&width=560&t=0"
-        width="560"
-        height="314"
-        style="border: none; overflow: hidden"
-        scrolling="no"
-        frameborder="0"
-        allowfullscreen="true"
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-        allowfullscreen="true"
-      ></iframe>
-      <div id="hero-img"></div>
-      <!-- <picture>
+    <div class="content-wrapper">
+      <header>
+        <nav>
+          <button id="hamburger">
+            <img src="assets\svg-icons\hamburger.svg" alt="" />
+          </button>
+          <div id="logo"><h1>Jonathan Spivack</h1></div>
+          <button id="contact">Contact</button>
+        </nav>
+      </header>
+      <main>
+        <!-- <iframe
+          src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fjonathan.spivack%2Fvideos%2F3216873795042945%2F&show_text=false&width=560&t=0"
+          width="560"
+          height="314"
+          style="border: none; overflow: hidden"
+          scrolling="no"
+          frameborder="0"
+          allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          allowfullscreen="true"
+        ></iframe> -->
+
+        <!-- <section id="hero-img-sect">
+          <div id="hero-img"></div>
+        </section> -->
+
+        <!-- <picture>
         <source
           media="(min-width: 1500px)"
           srcset="
@@ -72,45 +52,72 @@
           alt="hero-img"
         />
       </picture> -->
-      <h4>Solo Guitar</h4>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae
-        excepturi doloribus non culpa autem architecto repudiandae magni
-        necessitatibus impedit optio, sapiente voluptates! Blanditiis eligendi
-        odit commodi necessitatibus consectetur fugiat natus.
-      </p>
-      <br />
-      <h4>Media</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quidem
-        dignissimos tempore placeat repellendus nobis officiis eaque ullam
-        ipsam, voluptas cupiditate repudiandae, consectetur eos optio! Qui
-        repellat esse eaque ab?
-      </p>
-      <br />
-      <h4>Original Music</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sapiente
-        deserunt ad debitis perspiciatis enim totam deleniti officiis nam
-        ducimus sit veniam, officia ipsam laborum labore in architecto ea
-        tempora.
-      </p>
-      <br />
-      <h4>About</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sapiente
-        deserunt ad debitis perspiciatis enim totam deleniti officiis nam
-        ducimus sit veniam, officia ipsam laborum labore in architecto ea
-        tempora.
-      </p>
-      <br />
-      <h4>Inquire</h4>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
-        facilis dolore, aliquam maiores, illum iusto perferendis ipsam
-        asperiores inventore ratione corporis, incidunt eaque officiis dicta
-        modi deserunt magnam omnis quod?
-      </p>
-    </main>
+
+        <section>
+          <img src="assets\photo\headshot-2.jpg" alt="" />
+          <h4>About</h4>
+          <p>
+            Jon Spivack is a parent, an educator, and a musician who has been
+            teaching and performing in the Sacramento area for over 25 years. He
+            has earned a B.A. in Biological Sciences and a Master of Arts in
+            Special Education at California State University, Sacramento. Jon
+            enjoys teaching and sharing his love and enthusiasm for music. He
+            has taught in a wide variety of settings, both in the classroom and
+            as private instructor in the studio (currently at Watermelon Music
+            in Davis, Tim's Music in Sacramento and in The San Juan Unified
+            School District). Jon also co-founded Learning Quest, a company that
+            creates and markets educational materials for students. Of the four
+            teaching credentials he has earned, Jon credits his Multiple Subject
+            and Adult Ed credentials for his success as a teacher. His new
+            Jazz/Folk/Blues CD, Branching Out, is now available on CD Baby.
+          </p>
+        </section>
+        <section>
+          <h4>Media</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
+            quidem dignissimos tempore placeat repellendus nobis officiis eaque
+            ullam ipsam, voluptas cupiditate repudiandae, consectetur eos optio!
+            Qui repellat esse eaque ab?
+          </p>
+        </section>
+        <section>
+          <img src="assets\photo\album.jpg" alt="" />
+          <h4>Original Music</h4>
+          <p>
+            This Album showcases the guitar artistry of Jon Spivack in a variety
+            of settings: from solo jazz guitar, to folk and blues duets to Latin
+            trios. It may be described as chamber jazz or the music you might
+            listen to as you savor a fine wine with that special someone. Some
+            selections include flute,sax and/ or percussion. This is gentle
+            instrumental music performed with focus, spirit and intensity;
+            stimulating both sides of one's brain. State of the art recording
+            and engineering also add to the total listening experience. So enjoy
+            this music as you watch the sun set or as you cruise along a lonely
+            desert highway.
+          </p>
+        </section>
+        <section>
+          <img src="assets\photo\guitar-1.jpg" alt="" />
+          <h4>Solo Guitar</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae
+            excepturi doloribus non culpa autem architecto repudiandae magni
+            necessitatibus impedit optio, sapiente voluptates! Blanditiis
+            eligendi odit commodi necessitatibus consectetur fugiat natus.
+          </p>
+        </section>
+        <section>
+          <img src="assets\pexels-photo-1010518.jpeg" alt="" />
+          <h4>Inquire</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
+            facilis dolore, aliquam maiores, illum iusto perferendis ipsam
+            asperiores inventore ratione corporis, incidunt eaque officiis dicta
+            modi deserunt magnam omnis quod?
+          </p>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
