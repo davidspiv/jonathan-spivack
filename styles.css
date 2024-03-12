@@ -135,4 +135,25 @@
     padding: var(--big-gap);
     background-color: burlywood;
   }
+
+  /* h4::before {
+    background-image: url("/assets/SVG/guitar-neck.svg");
+    background-size: 100%;
+    position: absolute;
+    width: 50rem;
+    height: 100rem;
+    transform: rotate(90deg);
+    content: "";
+  } */
+
+  h4::after {
+    background-image: url("/assets/photo/gibson-modern-guitar-picks-88-mm.png");
+    background-size: 100%;
+    position: absolute;
+    right: 1rem;
+    width: 7rem;
+    height: 8rem;
+    transform: translate(0.3rem, -1rem);
+    content: "";
+  }
 }
