@@ -177,3 +177,8 @@ q:after {
 :focus:not(:focus-visible) {
   outline: none;
 }
+
+body,
+html {
+  overflow-x: hidden;
+}
