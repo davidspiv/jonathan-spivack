@@ -20,16 +20,15 @@
       z-index: 2;
       max-width: 1200px;
       margin: 0 auto;
+    }
+
+    header,
+    main,
+    footer {
       padding: 0 var(--gap);
     }
 
     header {
-      position: sticky;
-      height: var(--header-height);
-      top: 0;
-    }
-
-    #header {
       position: sticky;
       height: var(--header-height);
       top: 0;
@@ -94,10 +93,6 @@
     }
 
     footer {
-      height: var(--header-height);
-    }
-
-    #footer {
       height: var(--header-height);
       position: relative;
     }
@@ -203,7 +198,7 @@
     z-index: 0;
   } */
 
-  #footer::after {
+  footer::after {
     position: absolute;
     content: "";
     bottom: 0;
