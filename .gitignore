@@ -1,4 +1,6 @@
-assets/
+photo/
+video/
+Layout.ai
 *.html
 !index.html
 *.js
