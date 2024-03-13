@@ -199,7 +199,7 @@
     z-index: 0;
   } */
 
-  footer::after {
+  /* footer::after {
     position: absolute;
     content: "";
     bottom: 0;
@@ -210,5 +210,5 @@
     opacity: 0.8;
     background-color: #ffff;
     clip-path: url(#svgPath);
-  }
+  } */
 }
