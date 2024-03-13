@@ -1,1 +1,4 @@
 assets/
+*.html
+!index.html
+*.js
