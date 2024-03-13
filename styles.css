@@ -19,7 +19,6 @@
     body {
       overflow-x: hidden;
     }
-
     .content-wrapper {
       z-index: 2;
       max-width: 1200px;
