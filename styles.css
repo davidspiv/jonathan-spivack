@@ -203,16 +203,16 @@ body {
     z-index: 0;
   } */
 
-  /* footer::after {
+  footer::after {
     position: absolute;
     content: "";
     bottom: 0;
-    right: -93%;
+    right: -95%;
     width: 100%;
     height: 90%;
     padding: 1rem;
     opacity: 0.8;
     background-color: #ffff;
     clip-path: url(#svgPath);
-  } */
+  }
 }
