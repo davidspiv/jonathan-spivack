@@ -18,7 +18,7 @@
   @media (min-width: 0) {
     .content-wrapper {
       z-index: 2;
-      max-width: 1200px;
+      max-width: min(100%, 1200px);
       margin: 0 auto;
       overflow-x: hidden;
     }
