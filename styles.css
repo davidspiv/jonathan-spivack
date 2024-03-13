@@ -16,6 +16,9 @@
 
 @layer layout {
   @media (min-width: 0) {
+    body {
+      overflow: hidden;
+    }
     .content-wrapper {
       z-index: 2;
       max-width: 1200px;
