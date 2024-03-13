@@ -14,13 +14,17 @@
   --header-height: clamp(8rem, calc(5vw + 4rem), 11rem);
 }
 
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 @layer layout {
   @media (min-width: 0) {
     .content-wrapper {
       z-index: 2;
-      max-width: min(100%, 1200px);
+      max-width: 1200px;
       margin: 0 auto;
-      overflow-x: hidden;
     }
 
     header,
