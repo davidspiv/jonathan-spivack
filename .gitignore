@@ -2,3 +2,4 @@ assets/
 *.html
 !index.html
 *.js
+bfg.jar
