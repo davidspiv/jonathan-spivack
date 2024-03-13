@@ -154,6 +154,18 @@
     border-radius: 0.6rem;
   }
 
+  nav button:hover {
+    background-color: #849aba;
+  }
+
+  #hamburger {
+    opacity: 0.8;
+  }
+
+  #hamburger:hover {
+    opacity: 1;
+  }
+
   section h4 {
     /* overflow: hidden; */
     padding: var(--small-gap);
