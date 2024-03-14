@@ -1,7 +1,5 @@
 photo/
 video/
-Layout.ai
-*.html
-!index.html
+Layout.a
 *.js
 bfg.jar
