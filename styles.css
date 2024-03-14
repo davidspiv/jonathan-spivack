@@ -159,7 +159,7 @@
     border-radius: 0.6rem;
   }
 
-  nav button:hover {
+  button :hover {
     background-color: #849aba;
   }
 
@@ -167,7 +167,7 @@
     opacity: 0.8;
   }
 
-  #hamburger:hover {
+  #hamburger :hover {
     opacity: 1;
   }
 
