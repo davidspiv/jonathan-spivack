@@ -5,3 +5,4 @@ Layout.ai
 !index.html
 *.js
 bfg.jar
+node_modules/

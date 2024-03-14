@@ -183,7 +183,7 @@
     padding: var(--big-gap);
     background-color: burlywood;
     border-bottom-right-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
+    border-bottom-left-radius: ;
   }
 
   /* h4::after {
