@@ -48,10 +48,6 @@
       gap: var(--gap);
     }
 
-    nav button {
-      height: var(--bigger-gap);
-    }
-
     #contact {
       order: 1;
     }
@@ -71,12 +67,6 @@
 
     .card img {
       grid-column: 2;
-      display: grid;
-    }
-
-    .card video {
-      width: 70%;
-      height: auto;
     }
 
     .card article {
@@ -119,6 +109,7 @@
 @layer skin {
   * {
     --text-color: #181a1b;
+    color: var(--text-color);
   }
   :root {
     font-family: Montserrat, Georgia, "Times New Roman", Times, serif;
@@ -134,26 +125,16 @@
     font-size: clamp(2.2rem, 2vw + 1.25rem, 2.7rem);
   }
 
-  header h1,
-  header p {
-    color: var(--text-color);
-  }
-
-  h4,
-  p {
-    color: var(--text-color);
-  }
-
   header,
   footer {
     background-image: linear-gradient(45deg, #849aba, #5f6f86);
   }
 
   button {
+    height: var(--bigger-gap);
     padding: 0.7rem;
     border: 1px solid var(--text-color);
     border-radius: 0.6rem;
-    color: var(--text-color);
   }
 
   button:hover {
@@ -167,7 +148,6 @@
   }
 
   article h4 {
-    /* overflow: hidden; */
     padding: var(--small-gap);
     background-color: blanchedalmond;
     border-top-right-radius: 1.5rem;
