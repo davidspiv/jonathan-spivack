@@ -127,7 +127,9 @@ body {
   font-size: 1.6rem;
 }
 
-a {
+a,
+a :link,
+a :visited {
   color: black;
   text-decoration: none;
 }
