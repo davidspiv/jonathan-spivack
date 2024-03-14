@@ -1,0 +1,8 @@
+photo/
+video/
+Layout.ai
+*.html
+!index.html
+*.js
+bfg.jar
+node_modules/
