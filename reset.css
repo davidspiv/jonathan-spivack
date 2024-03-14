@@ -127,7 +127,15 @@ body {
   font-size: 1.6rem;
 }
 
-a {
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+a,
+a :link,
+a :visited {
   color: black;
   text-decoration: none;
 }

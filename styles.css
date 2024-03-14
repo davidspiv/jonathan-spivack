@@ -16,16 +16,6 @@
       --header-height: clamp(8rem, calc(5vw + 4rem), 11rem);
     }
 
-    body {
-      width: 100%;
-      overflow-x: hidden;
-    }
-
-    footer,
-    main {
-      width: 100%;
-    }
-
     .content-wrapper {
       margin: 0 auto;
       padding: 0 var(--gap);
@@ -58,11 +48,11 @@
       gap: var(--gap);
     }
 
-    nav button {
+    button {
       height: var(--bigger-gap);
     }
 
-    nav button :first-child {
+    button :first-child {
       padding: 0.7rem;
     }
 
@@ -149,22 +139,32 @@
     font-size: clamp(2.2rem, 2vw + 1.25rem, 2.7rem);
   }
 
+  header h1,
+  header p {
+    color: #181a1b;
+  }
+
+  h4,
+  p {
+    color: #181a1b;
+  }
+
   header,
   footer {
     background-image: linear-gradient(45deg, #849aba, #5f6f86);
   }
 
-  nav button {
+  button {
     border: 1px solid black;
     border-radius: 0.6rem;
   }
 
-  button :hover {
+  button:hover {
     background-color: #849aba;
   }
 
   #hamburger {
-    opacity: 0.8;
+    opacity: 0.7;
   }
 
   #hamburger :hover {
