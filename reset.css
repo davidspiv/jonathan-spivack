@@ -133,10 +133,7 @@ body {
   overflow-x: hidden;
 }
 
-a,
-a :link,
-a :visited {
-  color: black;
+a {
   text-decoration: none;
 }
 

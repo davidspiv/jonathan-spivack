@@ -16,6 +16,13 @@
       --header-height: clamp(8rem, calc(5vw + 4rem), 11rem);
     }
 
+    header {
+      position: sticky;
+      top: 0;
+      height: var(--header-height);
+      z-index: 20;
+    }
+
     .content-wrapper {
       margin: 0 auto;
       padding: 0 var(--gap);
@@ -24,17 +31,15 @@
       height: inherit;
     }
 
-    header {
-      position: sticky;
-      top: 0;
-      height: var(--header-height);
-      z-index: 20;
-    }
-
     header .content-wrapper {
       display: grid;
       grid-template-columns: auto 15rem;
       align-items: center;
+    }
+
+    #logo {
+      max-height: var(--header-height);
+      padding: var(--small-gap) 0 0 0;
     }
 
     nav {
@@ -43,21 +48,8 @@
       gap: var(--gap);
     }
 
-    #logo {
-      max-height: var(--header-height);
-      padding: var(--small-gap) 0 0 0;
-    }
-
-    button {
+    nav button {
       height: var(--bigger-gap);
-    }
-
-    button :first-child {
-      padding: 0.7rem;
-    }
-
-    nav button img {
-      width: var(--bigger-gap);
     }
 
     #contact {
@@ -125,6 +117,9 @@
 }
 
 @layer skin {
+  * {
+    --text-color: #181a1b;
+  }
   :root {
     font-family: Montserrat, Georgia, "Times New Roman", Times, serif;
     line-height: 1.5;
@@ -141,12 +136,12 @@
 
   header h1,
   header p {
-    color: #181a1b;
+    color: var(--text-color);
   }
 
   h4,
   p {
-    color: #181a1b;
+    color: var(--text-color);
   }
 
   header,
@@ -155,20 +150,20 @@
   }
 
   button {
-    border: 1px solid black;
+    padding: 0.7rem;
+    border: 1px solid var(--text-color);
     border-radius: 0.6rem;
+    color: var(--text-color);
   }
 
   button:hover {
     background-color: #849aba;
   }
 
-  #hamburger {
-    opacity: 0.7;
-  }
-
-  #hamburger :hover {
-    opacity: 1;
+  button img {
+    width: var(--bigger-gap);
+    max-height: 100%;
+    opacity: 0.8;
   }
 
   article h4 {
