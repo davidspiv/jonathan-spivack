@@ -1,5 +1,2 @@
-photo/
-video/
-Layout.a
-*.js
-bfg.jar
+assets/
+node_modules/
