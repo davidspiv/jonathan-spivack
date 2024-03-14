@@ -118,6 +118,8 @@ section {
 }
 
 html {
+  width: 100%;
+  overflow-x: hidden;
   font-size: 62.5%;
   -webkit-text-size-adjust: none; /* for iOS Safari */
   text-size-adjust: none; /* for other mobile browsers */
