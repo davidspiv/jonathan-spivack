@@ -111,6 +111,7 @@
     --text-color: #181a1b;
     color: var(--text-color);
   }
+
   :root {
     font-family: Montserrat, Georgia, "Times New Roman", Times, serif;
     line-height: 1.5;
@@ -146,6 +147,11 @@
     max-height: 100%;
     opacity: 0.8;
   }
+
+  /* .card img {
+    border: 0.5rem solid #764c38;
+    border-radius: 0.5rem;
+  } */
 
   article h4 {
     padding: var(--small-gap);
