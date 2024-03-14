@@ -37,15 +37,15 @@
       align-items: center;
     }
 
-    #logo {
-      max-height: var(--header-height);
-      padding: var(--small-gap) 0 0 0;
-    }
-
     nav {
       display: flex;
       flex-direction: row-reverse;
       gap: var(--gap);
+    }
+
+    #logo {
+      max-height: var(--header-height);
+      padding: var(--small-gap) 0 0 0;
     }
 
     button {
@@ -60,16 +60,16 @@
       width: var(--bigger-gap);
     }
 
+    #contact {
+      order: 1;
+    }
+
     main {
       margin-top: var(--big-gap);
       z-index: 2;
     }
 
-    #contact {
-      order: 1;
-    }
-
-    section {
+    .card {
       display: grid;
       grid-template-columns: 22% auto 22%;
       grid-template-rows: auto auto;
@@ -77,17 +77,17 @@
       margin-bottom: var(--header-height);
     }
 
-    section img {
+    .card img {
       grid-column: 2;
       display: grid;
     }
 
-    section video {
+    .card video {
       width: 70%;
       height: auto;
     }
 
-    .text-content {
+    .card article {
       grid-column: span 3;
       grid-row: span 2;
     }
@@ -99,25 +99,25 @@
   }
 
   @media (min-width: 768px) {
-    .text-content {
-      grid-column: 2 / 4;
-      display: grid;
-      grid-template-rows: subgrid;
-      row-gap: 0;
-    }
-
-    section {
-      z-index: 10;
-      row-gap: 0;
-    }
-
     #hamburger {
       order: 2;
       opacity: 0;
       visibility: hidden;
     }
 
-    section img {
+    .card {
+      z-index: 10;
+      row-gap: 0;
+    }
+
+    .card article {
+      grid-column: 2 / 4;
+      display: grid;
+      grid-template-rows: subgrid;
+      row-gap: 0;
+    }
+
+    .card img {
       grid-column: 1;
       grid-row: 2;
     }
@@ -171,7 +171,7 @@
     opacity: 1;
   }
 
-  section h4 {
+  article h4 {
     /* overflow: hidden; */
     padding: var(--small-gap);
     background-color: blanchedalmond;
@@ -179,22 +179,12 @@
     border-top-left-radius: 1.5rem;
   }
 
-  section p {
+  article p {
     padding: var(--big-gap);
     background-color: burlywood;
     border-bottom-right-radius: 1.5rem;
-    border-bottom-left-radius: ;
+    border-bottom-left-radius: 1.5rem;
   }
-
-  /* h4::after {
-    background-image: url("/assets/SVG/guitar-neck.svg");
-    background-size: 100%;
-    position: absolute;
-    width: 50rem;
-    height: 100rem;
-    transform: rotate(90deg);
-    content: "";
-  } */
 
   /* #about::after {
     background-image: url("/assets/photo/gibson-modern-guitar-picks-88-mm.png");
