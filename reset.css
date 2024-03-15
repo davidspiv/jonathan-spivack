@@ -146,7 +146,8 @@ table {
   border-spacing: 0;
 }
 
-img {
+img,
+video {
   display: block;
   max-width: 100%;
 }

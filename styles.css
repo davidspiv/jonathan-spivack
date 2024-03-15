@@ -51,6 +51,13 @@
       z-index: 2;
     }
 
+    video {
+      border: var(--small-gap) solid #393e41;
+      background-color: #181a1b;
+      border-bottom-right-radius: 1.5rem;
+      border-bottom-left-radius: 1.5rem;
+    }
+
     .card {
       display: grid;
       grid-template-columns: 22% auto 22%;
@@ -59,7 +66,8 @@
       margin-bottom: var(--header-height);
     }
 
-    .card img {
+    .card img,
+    .card video {
       grid-column: 2;
     }
 
@@ -121,7 +129,8 @@
       row-gap: 0;
     }
 
-    .card img {
+    .card img,
+    .card video {
       grid-column: 1;
       grid-row: 2;
     }
@@ -200,5 +209,10 @@
   input,
   textarea {
     color: white;
+  }
+
+  #media {
+    color: #f0c669;
+    background-color: #393e41;
   }
 }

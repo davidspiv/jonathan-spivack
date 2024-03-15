@@ -57,10 +57,13 @@
         </section>
         <section class="card">
           <article>
-            <h4>Media</h4>
-            <p>
-              Hear Jon's Music: <a href="/media.html"><button>Media</button></a>
-            </p>
+            <h4 id="media">Media</h4>
+            <video controls="controls">
+              <source
+                src="https://davidsmediabucket.s3.us-west-1.amazonaws.com/jonathan-spivack/video/a-whiter-shade-of-pale.mp4"
+                type="video/mp4"
+              />
+            </video>
           </article>
         </section>
         <section class="card">
@@ -118,15 +121,15 @@
       <div class="content-wrapper">
         <form>
           <h4>Have an event in mind?</h4>
-          <label for="#form-name">Name:</label>
+          <label for="form-name">Name:</label>
           <input id="form-name" type="text" />
-          <label for="#form-phone">Phone number:</label>
+          <label for="form-phone">Phone number:</label>
           <input id="form-phone" type="tel" />
-          <label for="#form-date">Event date:</label>
+          <label for="form-date">Event date:</label>
           <input id="form-date" type="date" />
-          <label for="#form-time">Event time:</label>
+          <label for="form-time">Event time:</label>
           <input id="form-time" type="time" />
-          <label for="#description"
+          <label for="description"
             >Please provide a brief description of the event:</label
           >
           <textarea id="description"></textarea>
