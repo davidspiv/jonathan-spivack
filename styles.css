@@ -1,4 +1,4 @@
-@layer reset, layout, skin;
+@layer reset, layout, components, skin;
 
 @import url(reset.css) layer(reset);
 
@@ -14,10 +14,6 @@
       --big-gap: clamp(1.8rem, calc(1.7vw + 1rem), 3.1rem);
       --bigger-gap: calc(var(--header-height) / 2);
       --header-height: clamp(8rem, calc(5vw + 4rem), 11rem);
-    }
-
-    :root {
-      scroll-behavior: smooth;
     }
 
     header {
@@ -41,21 +37,9 @@
       justify-content: space-between;
     }
 
-    #logo {
-      max-height: var(--header-height);
-      padding: var(--small-gap) 0 0 0;
-    }
-
     main {
       margin-top: var(--big-gap);
       z-index: 2;
-    }
-
-    video {
-      border: var(--small-gap) solid #393e41;
-      background-color: #181a1b;
-      border-bottom-right-radius: 1.5rem;
-      border-bottom-left-radius: 1.5rem;
     }
 
     .card {
@@ -89,31 +73,6 @@
       flex-direction: column;
       align-items: center;
     }
-
-    button,
-    input[type="button"],
-    input[type="submit"],
-    input[type="reset"],
-    input::file-selector-button {
-      cursor: pointer;
-    }
-
-    textarea {
-      height: calc(2 * var(--header-height));
-    }
-
-    input,
-    textarea {
-      width: 100%;
-      margin-bottom: var(--big-gap);
-      background-color: #465264;
-      min-height: 3rem;
-    }
-
-    footer h4 {
-      text-align: center;
-      margin-bottom: var(--big-gap);
-    }
   }
 
   @media (min-width: 768px) {
@@ -137,6 +96,55 @@
   }
 }
 
+@layer components {
+  #logo {
+    max-height: var(--header-height);
+    padding: var(--small-gap) 0 0 0;
+  }
+
+  button {
+    height: var(--bigger-gap);
+    padding: 0.7rem;
+  }
+
+  button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  input::file-selector-button {
+    cursor: pointer;
+  }
+
+  textarea {
+    height: calc(2 * var(--header-height));
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: var(--big-gap);
+    min-height: 3rem;
+  }
+
+  article h4 {
+    padding: var(--small-gap);
+  }
+
+  article p {
+    padding: var(--big-gap);
+  }
+
+  footer h4 {
+    text-align: center;
+    margin-bottom: var(--big-gap);
+  }
+
+  footer button {
+    width: 100%;
+    margin: var(--big-gap) 0;
+  }
+}
+
 @layer skin {
   * {
     /* COLOR */
@@ -150,6 +158,7 @@
   :root {
     font-family: Montserrat, Georgia, "Times New Roman", Times, serif;
     line-height: 1.5;
+    scroll-behavior: smooth;
   }
 
   h1,
@@ -166,13 +175,6 @@
     background-image: linear-gradient(45deg, #849aba, #5f6f86);
   }
 
-  button {
-    height: var(--bigger-gap);
-    padding: 0.7rem;
-    border: 1px solid var(--text-color);
-    border-radius: 0.6rem;
-  }
-
   header button:hover,
   footer button:hover {
     background-color: #849aba;
@@ -182,9 +184,16 @@
     background-color: #f0cb9c;
   }
 
-  footer button {
-    width: 100%;
-    margin: var(--big-gap) 0;
+  button {
+    border: 1px solid var(--text-color);
+    border-radius: 0.5rem;
+  }
+
+  video {
+    border: var(--small-gap) solid #393e41;
+    background-color: #181a1b;
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
   }
 
   /* .card img {
@@ -193,14 +202,12 @@
   } */
 
   article h4 {
-    padding: var(--small-gap);
     background-color: blanchedalmond;
     border-top-right-radius: 1.5rem;
     border-top-left-radius: 1.5rem;
   }
 
   article p {
-    padding: var(--big-gap);
     background-color: burlywood;
     border-bottom-right-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
@@ -209,6 +216,7 @@
   input,
   textarea {
     color: white;
+    background-color: #465264;
   }
 
   #media {
