@@ -16,6 +16,10 @@
       --header-height: clamp(8rem, calc(5vw + 4rem), 11rem);
     }
 
+    :root {
+      scroll-behavior: smooth;
+    }
+
     header {
       position: sticky;
       top: 0;
@@ -32,24 +36,14 @@
     }
 
     header .content-wrapper {
-      display: grid;
-      grid-template-columns: auto 15rem;
+      display: flex;
       align-items: center;
+      justify-content: space-between;
     }
 
     #logo {
       max-height: var(--header-height);
       padding: var(--small-gap) 0 0 0;
-    }
-
-    nav {
-      display: flex;
-      flex-direction: row-reverse;
-      gap: var(--gap);
-    }
-
-    #contact {
-      order: 1;
     }
 
     main {
@@ -74,19 +68,45 @@
       grid-row: span 2;
     }
 
-    footer {
+    /* footer {
       height: var(--header-height);
       position: relative;
+    } */
+
+    form {
+      max-width: 35rem;
+      margin: 0 auto;
+      padding: var(--bigger-gap) 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    button,
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"],
+    input::file-selector-button {
+      cursor: pointer;
+    }
+
+    textarea {
+      height: calc(2 * var(--header-height));
+    }
+
+    input,
+    textarea {
+      margin-bottom: var(--big-gap);
+      background-color: #465264;
+      min-height: 3rem;
+    }
+
+    footer h4 {
+      text-align: center;
+      margin-bottom: var(--big-gap);
     }
   }
 
   @media (min-width: 768px) {
-    #hamburger {
-      order: 2;
-      opacity: 0;
-      visibility: hidden;
-    }
-
     .card {
       z-index: 10;
       row-gap: 0;
@@ -108,7 +128,11 @@
 
 @layer skin {
   * {
+    /* COLOR */
     --text-color: #181a1b;
+  }
+
+  * :not(form) {
     color: var(--text-color);
   }
 
@@ -138,14 +162,17 @@
     border-radius: 0.6rem;
   }
 
-  button:hover {
+  header button:hover,
+  footer button:hover {
     background-color: #849aba;
   }
 
-  button img {
-    width: var(--bigger-gap);
-    max-height: 100%;
-    opacity: 0.8;
+  article button:hover {
+    background-color: #f0cb9c;
+  }
+
+  footer button {
+    margin: var(--big-gap) 0;
   }
 
   /* .card img {
@@ -167,28 +194,8 @@
     border-bottom-left-radius: 1.5rem;
   }
 
-  /* #about::after {
-    background-image: url("/assets/photo/gibson-modern-guitar-picks-88-mm.png");
-    background-size: 100%;
-    position: absolute;
-    right: 1rem;
-    width: 7rem;
-    height: 8rem;
-    transform: translate(0.3rem, -1rem);
-    content: "";
-    z-index: 0;
-  } */
-
-  footer::after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    right: -90%;
-    width: 100%;
-    height: 90%;
-    padding: 1rem;
-    opacity: 0.8;
-    background-color: #ffff;
-    clip-path: url(#svgPath);
+  input,
+  textarea {
+    color: white;
   }
 }
