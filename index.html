@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -55,16 +55,32 @@
             </p>
           </article>
         </section>
-        <section class="card">
-          <article>
-            <h4 id="media">Media</h4>
-            <video controls="controls">
-              <source
-                src="https://davidsmediabucket.s3.us-west-1.amazonaws.com/jonathan-spivack/video/a-whiter-shade-of-pale.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </article>
+        <section class="media">
+          <h4 id="media">Media</h4>
+          <div class="list-wrapper">
+            <ul class="list">
+              <li class="item">
+                <div class="content">
+                  <video width="640px" height="360px" controls="controls">
+                    <source
+                      src="https://davidsmediabucket.s3.us-west-1.amazonaws.com/jonathan-spivack/video/a-whiter-shade-of-pale.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </li>
+              <li class="item"><div class="content">Item 2</div></li>
+              <li class="item"><div class="content">Item 3</div></li>
+              <li class="item"><div class="content">Item 4</div></li>
+              <li class="item"><div class="content">Item 5</div></li>
+            </ul>
+            <button id="prev" class="button button--previous" type="button">
+              ➜
+            </button>
+            <button id="next" class="button button--next" type="button">
+              ➜
+            </button>
+          </div>
         </section>
         <section class="card">
           <img
@@ -137,8 +153,8 @@
         </form>
       </div>
     </footer>
-    <!-- <script src="utility.js"></script>
-    <script src="index.js"></script> -->
+    <!-- <script src="utility.js"></script> -->
+    <script src="index.js"></script>
   </body>
 </html>
 <!-- <picture>

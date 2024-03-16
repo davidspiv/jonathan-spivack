@@ -1,34 +1,14 @@
-let pastScroll = 0;
+const prev = document.querySelector("#prev");
+const next = document.querySelector("#next");
+const list = document.querySelector(".list");
+const item = document.querySelector(".item");
 
-document.addEventListener(
-  "scroll",
-  throttle(() => {
-    scrollFunction();
-  }, 500)
-);
+const itemWidth = item.offsetWidth;
 
-function scrollFunction() {
-  let scroll = getCurrentScroll();
-  console.log(pastScroll - scroll);
-  pastScroll = scroll;
-}
+prev.addEventListener("click", () => {
+  list.scrollBy({ left: -itemWidth, behavior: "smooth" });
+});
 
-function getCurrentScroll() {
-  return window.scrollY || document.documentElement.scrollTop;
-}
-
-// $(function () {
-//   //the shrinkHeader variable is where you tell the scroll effect to start.
-//   var shrinkHeader = 70;
-//   $(window).scroll(function () {
-//     var scroll = getCurrentScroll();
-//     if (scroll >= shrinkHeader) {
-//       $(".header-box").addClass("smaller");
-//     } else {
-//       $(".header-box").removeClass("smaller");
-//     }
-//   });
-//   function getCurrentScroll() {
-//     return window.pageYOffset || document.documentElement.scrollTop;
-//   }
-// });
+next.addEventListener("click", () => {
+  list.scrollBy({ left: itemWidth, behavior: "smooth" });
+});
