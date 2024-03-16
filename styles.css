@@ -79,21 +79,15 @@
 
     .list {
       display: flex;
-      gap: 8px;
-      padding: 16px;
+      gap: 2rem;
+      padding: var(--big-gap);
 
-      list-style: none;
       overflow-x: scroll;
       scroll-snap-type: x mandatory;
     }
 
     .item {
       flex-shrink: 0;
-      width: 80%;
-      height: 90vh;
-
-      background-color: #fff;
-
       scroll-snap-align: center;
     }
 
@@ -135,6 +129,7 @@
       height: 3rem;
 
       transform: translateY(-50%);
+      background: white;
     }
 
     .button--previous {
@@ -263,12 +258,12 @@
     border-radius: 0.5rem;
   }
 
-  video {
+  /* video {
     border: var(--small-gap) solid #393e41;
     background-color: #181a1b;
     border-bottom-right-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
-  }
+  } */
 
   /* .card img {
     border: 0.5rem solid #764c38;
