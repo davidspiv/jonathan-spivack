@@ -22,7 +22,8 @@
       overflow-x: hidden;
     }
 
-    header {
+    header,
+    footer {
       height: var(--header-height);
     }
 
@@ -109,9 +110,9 @@
   }
 
   button,
-  input[type="button"],
-  input[type="submit"],
-  input[type="reset"],
+  input[type='button'],
+  input[type='submit'],
+  input[type='reset'],
   input::file-selector-button {
     cursor: pointer;
   }
@@ -148,6 +149,14 @@
   form label {
     width: 100%;
   }
+
+  strong {
+    font-weight: 600;
+  }
+
+  br {
+    margin: var(--gap);
+  }
 }
 
 @layer skin {
@@ -161,7 +170,7 @@
   }
 
   :root {
-    font-family: Montserrat, Georgia, "Times New Roman", Times, serif;
+    font-family: Montserrat, Georgia, 'Times New Roman', Times, serif;
     scroll-behavior: smooth;
   }
 
