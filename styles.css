@@ -46,11 +46,14 @@
     }
 
     .card {
+      margin-bottom: var(--header-height);
+    }
+
+    .card:not(#media) {
       display: grid;
       grid-template-columns: 22% auto 22%;
       grid-template-rows: auto auto;
       gap: var(--big-gap);
-      margin-bottom: var(--header-height);
     }
 
     .card img,
@@ -79,8 +82,8 @@
 
     .list {
       display: flex;
-      gap: 2rem;
-      padding: var(--big-gap);
+      /* gap: 2rem;
+      padding: var(--big-gap); */
 
       overflow-x: scroll;
       scroll-snap-type: x mandatory;
@@ -95,11 +98,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100%;
-
-      font-family: sans-serif;
-      font-size: 64px;
-      font-weight: bold;
     }
 
     .list {
@@ -123,7 +121,7 @@
 
     .button {
       position: absolute;
-      top: 50%;
+      top: 45%;
 
       width: 3rem;
       height: 3rem;
@@ -133,13 +131,11 @@
     }
 
     .button--previous {
-      left: 1.5rem;
-
-      transform: rotate(180deg);
+      left: -5rem;
     }
 
     .button--next {
-      right: 1.5rem;
+      right: -5rem;
     }
   }
 
@@ -181,11 +177,11 @@
     cursor: pointer;
   }
 
-  article h4 {
+  .card h4 {
     padding: var(--big-gap);
   }
 
-  article p {
+  .card p {
     padding: var(--big-gap);
   }
 
@@ -249,10 +245,6 @@
     background-color: #849aba;
   }
 
-  article button:hover {
-    background-color: #f0cb9c;
-  }
-
   button {
     border: 1px solid var(--text-color);
     border-radius: 0.5rem;
@@ -270,13 +262,13 @@
     border-radius: 0.5rem;
   } */
 
-  article h4 {
+  .card h4 {
     background-color: blanchedalmond;
     border-top-right-radius: 1.5rem;
     border-top-left-radius: 1.5rem;
   }
 
-  article p {
+  .card p {
     background-color: burlywood;
     border-bottom-right-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
@@ -289,8 +281,14 @@
     text-align: center;
   }
 
-  #media {
+  #media h4 {
     color: #f0c669;
     background-color: #393e41;
+  }
+
+  #media {
+    width: 72%;
+    margin: 0 auto;
+    margin-bottom: var(--header-height);
   }
 }
