@@ -237,4 +237,8 @@
     color: #f0c669;
     background-color: #393e41;
   }
+
+  #media-card {
+    max-width: 640px;
+  }
 }
