@@ -84,17 +84,17 @@
       row-gap: 0;
     }
 
+    .card img,
+    .card video {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
     .card article {
       grid-column: 2 / 4;
       display: grid;
       grid-template-rows: subgrid;
       row-gap: 0;
-    }
-
-    .card img,
-    .card video {
-      grid-column: 1;
-      grid-row: 2;
     }
   }
 }
@@ -159,7 +159,7 @@
   }
 }
 
-@layer skin {
+@layer theme {
   * {
     /* COLOR */
     --text-color: #181a1b;
