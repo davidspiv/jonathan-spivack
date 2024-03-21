@@ -157,9 +157,13 @@
   br {
     margin: var(--gap);
   }
+
+  #media-article {
+    max-width: 640px;
+  }
 }
 
-@layer skin {
+@layer theme {
   * {
     /* COLOR */
     --text-color: #181a1b;
@@ -207,6 +211,7 @@
     background-color: #181a1b;
     border-bottom-right-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
+    width: 100%;
   }
 
   /* .card img {
