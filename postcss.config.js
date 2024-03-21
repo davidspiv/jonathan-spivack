@@ -1,7 +1,7 @@
 import postcssImport from 'postcss-import';
-import postcssPresetEnv from 'postcss-preset-env';
+import autoprefixer from 'autoprefixer';
 import cssNano from 'cssnano';
 
 export default {
-  plugins: [postcssImport, postcssPresetEnv, cssNano],
+  plugins: [postcssImport, autoprefixer, cssNano],
 };
