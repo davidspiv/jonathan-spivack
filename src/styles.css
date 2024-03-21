@@ -1,6 +1,6 @@
-@layer reset, layout, components, skin;
+@layer reset, layout, components, theme;
 
-@import url(reset.css) layer(reset);
+@import 'reset.css' layer(reset);
 
 @layer layout {
   @media (min-width: 0) {
@@ -65,9 +65,9 @@
     }
 
     /* footer {
-      height: var(--header-height);
-      position: relative;
-    } */
+        height: var(--header-height);
+        position: relative;
+      } */
 
     form {
       max-width: 35rem;
