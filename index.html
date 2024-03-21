@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="video.css" />
     <!-- <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script> -->
   </head>
   <body>
@@ -52,12 +53,61 @@
         <section class="card">
           <article>
             <h4 id="media">Media</h4>
-            <video controls="controls">
-              <source
-                src="https://davidsmediabucket.s3.us-west-1.amazonaws.com/jonathan-spivack/video/a-whiter-shade-of-pale.mp4"
-                type="video/mp4"
-              />
-            </video>
+            <div
+              class="gui-carousel"
+              carousel-pagination="dots"
+              carousel-controls="auto"
+              carousel-scrollbar="auto"
+              carousel-snapstop="auto"
+              aria-label="Featured Items Carousel"
+            >
+              <div class="gui-carousel--scroller">
+                <div class="gui-carousel--snap">
+                  <figure class="animate-visibility captioned-image">
+                    <img
+                      loading="lazy"
+                      width="1280"
+                      height="720"
+                      src="https://picsum.photos/seed/this/1280/720.webp"
+                      alt="Blue ocean with a large wave"
+                    />
+                    <figcaption>
+                      <a href="#">Learn more about large ocean waves</a>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="gui-carousel--snap">
+                  <figure class="animate-visibility captioned-image">
+                    <img
+                      loading="lazy"
+                      width="1280"
+                      height="720"
+                      src="https://picsum.photos/seed/is/1280/720.webp"
+                      alt="Frosty orange desert sunset"
+                    />
+                    <figcaption>
+                      <a href="#">Learn more about warm deserts</a>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="gui-carousel--snap">
+                  <figure class="animate-visibility captioned-image">
+                    <img
+                      loading="lazy"
+                      width="1280"
+                      height="720"
+                      src="https://picsum.photos/seed/a/1280/720.webp"
+                      alt="African sahara with a giraffe"
+                    />
+                    <figcaption>
+                      <a href="#">Learn more about giraffe's</a>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
           </article>
         </section>
         <section class="card">
@@ -78,8 +128,9 @@
         </section>
         <section class="card">
           <img
-          src="https://davidsmediabucket.s3.us-west-1.amazonaws.com/jonathan-spivack/photo/sketch-2.jpg""
-          alt="" />
+            src="https://davidsmediabucket.s3.us-west-1.amazonaws.com/jonathan-spivack/photo/sketch-2.jpg"
+            alt=""
+          />
           <article>
             <h4>Inquire</h4>
             <p>
@@ -95,6 +146,7 @@
     <footer id="footer"></footer>
     <!-- <script src="utility.js"></script>
     <script src="index.js"></script> -->
+    <script src="video.js"></script>
   </body>
 </html>
 <!-- <picture>
