@@ -23,7 +23,7 @@ mediaButtonContainer.addEventListener('click', function (e) {
         type="video/mp4"
       />
     </video>
-    <h3>Test</h3>
+    <h3>${e.target.textContent}</h3>
         `;
   }
 });
