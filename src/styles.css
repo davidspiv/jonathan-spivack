@@ -95,6 +95,12 @@
       row-gap: 0;
     }
 
+    .card img,
+    .card video {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
     .card article {
       grid-column: 2 / 4;
       display: grid;
@@ -154,6 +160,7 @@
   }
 }
 
+@layer theme {
 @layer theme {
   * {
     /* COLOR */
