@@ -65,11 +65,19 @@
 
     .card:has(#media-article) {
       display: block;
-      background-color: #393e41;
       border-top-right-radius: 1.5rem;
       border-top-left-radius: 1.5rem;
       border-bottom-right-radius: 1.5rem;
       border-bottom-left-radius: 1.5rem;
+    }
+
+    #media-container {
+      padding: var(--bigger-gap) 0 0 0;
+    }
+
+    .card h3 {
+      padding: var(--big-gap) 0;
+      text-align: center;
     }
 
     .card ul {
@@ -77,6 +85,7 @@
       flex-wrap: wrap;
       gap: var(--small-gap);
       margin: 0 auto;
+      padding: 0 0 var(--bigger-gap) 0;
     }
 
     .card h3,
@@ -211,16 +220,13 @@
       border-bottom-left-radius: 1.5rem;
     }
 
-    input,
-    textarea {
-      color: white;
-      background-color: #465264;
-      text-align: center;
+    .card:has(#media-article) {
+      background-color: #2d2f31;
     }
 
     #media-article h2 {
       color: #f0c669;
-      background-color: gray;
+      background-color: #5c5f65;
     }
 
     #media-article button {
@@ -228,7 +234,11 @@
     }
 
     #media-article button:hover {
-      background-color: #fff;
+      background-color: #5c5f65;
+    }
+
+    #media-article h3 {
+      color: #a1a6b1;
     }
   }
 }
