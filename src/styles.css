@@ -74,10 +74,6 @@
       border-bottom-left-radius: 1.5rem;
     }
 
-    #media-container {
-      padding: var(--bigger-gap) 0 0 0;
-    }
-
     .card h3 {
       padding: var(--big-gap) 0;
       text-align: center;
@@ -124,6 +120,10 @@
     .card img {
       grid-column: 1;
       grid-row: 2;
+    }
+
+    #media-container {
+      padding: var(--bigger-gap) 0 0 0;
     }
   }
 }
@@ -236,12 +236,12 @@
     }
 
     #media-article h2 {
-      color: #f0c669;
+      color: #e2b145;
       background-color: #5c5f65;
     }
 
     #media-article button {
-      color: #f0c669;
+      color: #e2b145;
     }
 
     #media-article button:hover {
