@@ -43,7 +43,7 @@
     }
 
     main {
-      margin-top: var(--big-gap);
+      margin: var(--big-gap) 0;
     }
 
     .card {
@@ -52,6 +52,9 @@
       grid-template-rows: auto auto;
       gap: var(--big-gap);
       margin-bottom: var(--header-height);
+    }
+    .card:last-child {
+      margin-bottom: 0;
     }
 
     .card img {
@@ -86,6 +89,11 @@
       gap: var(--small-gap);
       margin: 0 auto;
       padding: 0 0 var(--bigger-gap) 0;
+    }
+
+    .card video {
+      width: 640px;
+      max-height: 360px;
     }
 
     .card h3,
