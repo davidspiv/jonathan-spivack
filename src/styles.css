@@ -75,6 +75,7 @@
     }
 
     .card h3 {
+      padding: var(--big-gap) 0;
       text-align: center;
     }
 
