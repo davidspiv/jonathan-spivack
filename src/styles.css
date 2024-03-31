@@ -170,18 +170,17 @@
     cursor: pointer;
   }
 
-  article h2 {
+  article h2,
+  #inquire-article ul,
+  article p {
     padding: var(--big-gap);
   }
 
-  article p,
   #inquire-article ul {
-    margin: var(--big-gap);
-  }
-
-  footer h2 {
-    text-align: center;
-    margin-bottom: var(--big-gap);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap);
   }
 
   footer button {
@@ -243,6 +242,12 @@
       border-top-left-radius: 1.5rem;
     }
 
+    #inquire-article ul {
+      background-color: #bf955d;
+      border-bottom-right-radius: 1.5rem;
+      border-bottom-left-radius: 1.5rem;
+    }
+
     article {
       background-color: burlywood;
       border-top-right-radius: 1.5rem;
@@ -270,12 +275,6 @@
 
     #media-article h3 {
       color: #a1a6b1;
-    }
-
-    #inquire-article ul {
-      padding: 1rem;
-      border: 1.5px solid #a24f16;
-      border-radius: 1rem;
     }
 
     article a {
