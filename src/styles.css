@@ -179,7 +179,6 @@
   #inquire-article ul {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: var(--gap);
   }
 
@@ -242,11 +241,11 @@
       border-top-left-radius: 1.5rem;
     }
 
-    #inquire-article ul {
-      background-color: #bf955d;
+    /* #inquire-article ul {
+      background-color: #ca8f67;
       border-bottom-right-radius: 1.5rem;
       border-bottom-left-radius: 1.5rem;
-    }
+    } */
 
     article {
       background-color: burlywood;
