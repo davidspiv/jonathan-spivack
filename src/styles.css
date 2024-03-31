@@ -47,12 +47,32 @@
     }
 
     .card {
+      margin-bottom: var(--header-height);
+    }
+
+    .card:not(:has(ul)) {
+      display: grid;
+      grid-template-columns: 22% auto 22%;
+      grid-template-rows: auto auto;
+      gap: var(--big-gap);
+    }
+
+    .card:has(#media-article) {
+      display: block;
+      border-top-right-radius: 1.5rem;
+      border-top-left-radius: 1.5rem;
+      border-bottom-right-radius: 1.5rem;
+      border-bottom-left-radius: 1.5rem;
+    }
+
+    .card:has(#inquire-article) {
       display: grid;
       grid-template-columns: 22% auto 22%;
       grid-template-rows: auto auto;
       gap: var(--big-gap);
       margin-bottom: var(--header-height);
     }
+
     .card:last-child {
       margin-bottom: 0;
     }
@@ -66,20 +86,12 @@
       grid-row: span 2;
     }
 
-    .card:has(#media-article) {
-      display: block;
-      border-top-right-radius: 1.5rem;
-      border-top-left-radius: 1.5rem;
-      border-bottom-right-radius: 1.5rem;
-      border-bottom-left-radius: 1.5rem;
-    }
-
     .card h3 {
       padding: var(--big-gap) 0;
       text-align: center;
     }
 
-    article ul {
+    #media-article ul {
       display: flex;
       flex-wrap: wrap;
       gap: var(--small-gap);
@@ -112,6 +124,9 @@
     .card article {
       grid-column: 2 / 4;
       display: grid;
+    }
+
+    .card article:not(:has(ul)) {
       grid-template-rows: subgrid;
     }
 
@@ -159,7 +174,8 @@
     padding: var(--big-gap);
   }
 
-  article p {
+  article p,
+  #inquire-article ul {
     margin: var(--big-gap);
   }
 
@@ -254,6 +270,12 @@
 
     #media-article h3 {
       color: #a1a6b1;
+    }
+
+    #inquire-article ul {
+      padding: 1rem;
+      border: 1.5px solid #a24f16;
+      border-radius: 1rem;
     }
 
     article a {
