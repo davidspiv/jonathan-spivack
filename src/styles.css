@@ -211,6 +211,10 @@
       font-size: clamp(2.2rem, 2vw + 1.25rem, 2.7rem);
     }
 
+    #logo p:last-child {
+      font-size: 14px;
+    }
+
     body {
       background-color: #faf5ee;
     }
