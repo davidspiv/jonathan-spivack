@@ -1,6 +1,6 @@
 @layer reset, layout, components, theme;
 
-@import 'reset.css' layer(reset);
+@import "reset.css" layer(reset);
 
 @layer layout {
   @media (min-width: 0) {
@@ -43,11 +43,15 @@
     }
 
     main {
-      margin: var(--big-gap) 0;
+      margin: var(--bigger-gap) 0;
+    }
+
+    video {
+      aspect-ratio: 16/9;
     }
 
     .card {
-      margin-bottom: var(--header-height);
+      margin-bottom: var(--bigger-gap);
     }
 
     .card:not(:has(ul)) {
@@ -70,7 +74,6 @@
       grid-template-columns: 22% auto 22%;
       grid-template-rows: auto auto;
       gap: var(--big-gap);
-      margin-bottom: var(--header-height);
     }
 
     .card:last-child {
@@ -87,8 +90,12 @@
     }
 
     .card h3 {
-      padding: var(--big-gap) 0;
+      padding: var(--gap) 0;
       text-align: center;
+    }
+
+    #media-container {
+      padding: var(--big-gap) var(--big-gap) 0 var(--big-gap);
     }
 
     #media-article ul {
@@ -96,29 +103,20 @@
       flex-wrap: wrap;
       gap: var(--small-gap);
       padding: 0 0 var(--bigger-gap) 0;
+      justify-content: center;
     }
 
     #media-container h3,
-    #media-container video,
     #media-article ul {
       max-width: 100%;
-      margin: 0 auto;
+      margin: 0 var(--big-gap);
     }
-
-    #media-container h3,
-    #media-article ul {
-      margin: var(--big-gap);
-    }
-
-    /* footer {
-        height: var(--header-height);
-        position: relative;
-      } */
   }
 
   @media (min-width: 768px) {
     .card {
       row-gap: 0;
+      margin-bottom: var(--header-height);
     }
 
     .card article {
@@ -140,15 +138,10 @@
     }
 
     #media-container h3,
-    #media-container video,
-    #media-article ul {
+    #media-container video {
       max-width: min(640px, 100%);
       margin: 0 auto;
     }
-
-    /* #media-container video {
-      aspect-ratio: 16 / 9;
-    } */
   }
 }
 
@@ -162,14 +155,13 @@
   }
 
   button {
-    height: var(--bigger-gap);
-    padding: 0.7rem;
+    padding: var(--gap);
   }
 
   button,
-  input[type='button'],
-  input[type='submit'],
-  input[type='reset'],
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
   input::file-selector-button {
     cursor: pointer;
   }
@@ -186,11 +178,6 @@
     gap: var(--gap);
   }
 
-  footer button {
-    width: 100%;
-    margin: var(--big-gap) 0;
-  }
-
   strong {
     font-weight: 600;
   }
@@ -205,7 +192,7 @@
     }
 
     :root {
-      font-family: Montserrat, Georgia, 'Times New Roman', Times, serif;
+      font-family: Montserrat, Georgia, "Times New Roman", Times, serif;
       scroll-behavior: smooth;
     }
 
@@ -219,13 +206,16 @@
       font-size: clamp(2.2rem, 2vw + 1.25rem, 2.7rem);
     }
 
+    body {
+      background-color: #faf5ee;
+    }
+
     header,
     footer {
       background-image: linear-gradient(45deg, #849aba, #5f6f86);
     }
 
-    header button:hover,
-    footer button:hover {
+    header button:hover {
       background-color: #849aba;
     }
 
@@ -234,22 +224,11 @@
       border-radius: 0.5rem;
     }
 
-    /* .card img {
-    border: 0.5rem solid #764c38;
-    border-radius: 0.5rem;
-  } */
-
     article h2 {
-      background-color: blanchedalmond;
+      background: linear-gradient(90deg, #e3c59e, #deb887);
       border-top-right-radius: 1.5rem;
       border-top-left-radius: 1.5rem;
     }
-
-    /* #inquire-article ul {
-      background-color: #ca8f67;
-      border-bottom-right-radius: 1.5rem;
-      border-bottom-left-radius: 1.5rem;
-    } */
 
     article {
       background-color: burlywood;
@@ -264,12 +243,14 @@
     }
 
     #media-article h2 {
-      color: #e2b145;
-      background-color: #5c5f65;
+      background: none;
+      background-color: #35373a;
+      color: #faf5ee;
     }
 
     #media-article button {
-      color: #e2b145;
+      color: #deb887;
+      font-weight: 600;
     }
 
     #media-article button:hover {
@@ -277,7 +258,7 @@
     }
 
     #media-article h3 {
-      color: #a1a6b1;
+      color: #faf5ee;
     }
 
     article a {
