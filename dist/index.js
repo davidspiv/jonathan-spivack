@@ -17,12 +17,12 @@ mediaButtonContainer.addEventListener('click', (e) => {
 		const linkTitle = linkArr[Number(pressedButtonId.slice(-1)) - 1];
 		const src = `https://davidsmediabucket.s3.us-west-1.amazonaws.com/jonathan-spivack/video/${linkTitle}.mp4`;
 		mediaContainer.innerHTML = `
-    <video width="640px" height="360px" controls="controls">
-      <source
-        src=${src}
-        type="video/mp4"
-      />
-    </video>
+		<video controls="controls">
+		<source
+		src=${src}
+		type="video/mp4"
+		/>
+	</video>
     <h3>${e.target.textContent}</h3>
         `;
 	}
