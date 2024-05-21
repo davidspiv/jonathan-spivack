@@ -234,7 +234,7 @@
     }
 
     article h2 {
-      background: linear-gradient(90deg, #e3c59e, #deb887);
+      background-color: #e3c59e;
       border-top-right-radius: 1.5rem;
       border-top-left-radius: 1.5rem;
     }
@@ -252,7 +252,6 @@
     }
 
     #media-article h2 {
-      background: none;
       background-color: #35373a;
       color: #fefcfd;
     }
