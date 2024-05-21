@@ -212,7 +212,7 @@
     }
 
     body {
-      background-color: #faf5ee;
+      background-color: #fefcfd;
     }
 
     header,
@@ -250,7 +250,7 @@
     #media-article h2 {
       background: none;
       background-color: #35373a;
-      color: #faf5ee;
+      color: #fefcfd;
     }
 
     #media-article button {
@@ -263,12 +263,12 @@
     }
 
     #media-article h3 {
-      color: #faf5ee;
+      color: #fefcfd;
     }
 
     #personal-logo p {
       font-size: 12px;
-      color: #faf5ee;
+      color: #fefcfd;
     }
 
     article a {

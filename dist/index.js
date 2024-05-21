@@ -1,17 +1,17 @@
-const mediaContainer = document.querySelector("#media-container");
-const mediaButtonContainer = document.querySelector("#media-article ul");
+const mediaContainer = document.querySelector('#media-container');
+const mediaButtonContainer = document.querySelector('#media-article ul');
 const linkArr = [
-	"a-whiter-shade-of-pale",
-	"besame-mucho",
-	"blackbird-and-strawberry-fields",
-	"comin-home-baby",
-	"exactly-like-you",
-	"get-together",
-	"the-water-is-wild",
-	"wayfaring-stranger",
-	"what-a-wonderful-world",
+	'a-whiter-shade-of-pale',
+	'besame-mucho',
+	'blackbird-and-strawberry-fields',
+	'comin-home-baby',
+	'exactly-like-you',
+	'get-together',
+	'the-water-is-wild',
+	'wayfaring-stranger',
+	'what-a-wonderful-world',
 ];
-mediaButtonContainer.addEventListener("click", (e) => {
+mediaButtonContainer.addEventListener('click', (e) => {
 	const pressedButtonId = e.target.id;
 	if (pressedButtonId) {
 		const linkTitle = linkArr[Number(pressedButtonId.slice(-1)) - 1];
