@@ -51,11 +51,8 @@
       margin: var(--bigger-gap) 0;
     }
 
-    video {
-      aspect-ratio: auto;
-    }
-
-    .card {
+    .card,
+    #banner {
       margin-bottom: var(--bigger-gap);
     }
 
@@ -117,12 +114,35 @@
       max-width: 100%;
       margin: 0 var(--big-gap);
     }
+
+    #venues {
+      margin: var(--big-gap);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem; /* optional, adds space between items */
+    }
+
+    #venues li {
+      width: 100%; /* stack items in one column */
+    }
   }
 
   @media (min-width: 768px) {
+    #venues li {
+      width: 44%; /* two columns */
+    }
+
+    .card:not(:has(ul)) {
+      gap: 0 var(--big-gap);
+    }
+
+    #menu-buttons button {
+      margin: 1rem;
+    }
+
     .card {
       row-gap: 0;
-      margin-bottom: var(--bigger-gap);
+      padding-bottom: 4rem;
     }
 
     .card article {
@@ -143,6 +163,16 @@
       grid-row-start: 1;
       grid-row-end: 3;
       grid-column: 1;
+    }
+
+    .img-container-alternate {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column: 3;
+    }
+
+    .img-container-alternate-2 {
+      grid-column: 2;
     }
 
     #media-container {
@@ -185,6 +215,10 @@
     padding: var(--big-gap);
   }
 
+  #inquire-article {
+    grid-column: 1 / 3;
+  }
+
   #inquire-article ul {
     display: flex;
     flex-direction: column;
@@ -214,6 +248,11 @@
     :root {
       font-family: Montserrat, Georgia, "Times New Roman", Times, serif;
       scroll-behavior: smooth;
+    }
+
+    #banner {
+      border: 1rem solid #443829;
+      padding: 0.5rem;
     }
 
     h1,
@@ -248,6 +287,13 @@
       border-radius: 0.5rem;
     }
 
+    article {
+      border-top-right-radius: 1.5rem;
+      border-top-left-radius: 1.5rem;
+      border-bottom-right-radius: 1.5rem;
+      border-bottom-left-radius: 1.5rem;
+    }
+
     article h2 {
       background-color: #e3c59e;
       border-top-right-radius: 1.5rem;
@@ -256,10 +302,6 @@
 
     article {
       background-color: burlywood;
-      border-top-right-radius: 1.5rem;
-      border-top-left-radius: 1.5rem;
-      border-bottom-right-radius: 1.5rem;
-      border-bottom-left-radius: 1.5rem;
     }
 
     article:has(#media-container) {
@@ -269,6 +311,11 @@
     #media-article h2 {
       background-color: #594b3a;
       color: #fefcfd;
+    }
+
+    #media-article p {
+      color: burlywood;
+      text-align: center;
     }
 
     #media-article button {
