@@ -245,6 +245,15 @@
       color: var(--text-color);
     }
 
+    #caption {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #fefcfd; /* You can change this to black or any color */
+      background-color: #443829; /* Transparent background */
+      text-align: center;
+      padding-top: 1rem;
+    }
+
     :root {
       font-family: Montserrat, Georgia, "Times New Roman", Times, serif;
       scroll-behavior: smooth;
@@ -286,7 +295,8 @@
       border-radius: 0.5rem;
     }
 
-    article {
+    article,
+    #banner {
       border-top-right-radius: 1.5rem;
       border-top-left-radius: 1.5rem;
       border-bottom-right-radius: 1.5rem;
